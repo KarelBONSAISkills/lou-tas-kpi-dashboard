@@ -1,0 +1,94 @@
+/**
+ * DSE Design System — CSS custom properties
+ * Canonical import for HTML, print, and standalone bundles.
+ * Source: ~/.cursor/skills/dse-design-system/tokens.json
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Primitive */
+  --dse-teal-900: #002C2F;
+  --dse-teal-500: #4F6B6C;
+  --dse-sage-400: #89A9A9;
+  --dse-mint-50: #F5FAFA;
+  --dse-warm-50: #FAF9F7;
+  --dse-white: #FFFFFF;
+  --dse-border-mint: #D6E6E6;
+  --dse-orange-500: #F04A00;
+  --dse-red-600: #B42318;
+  --dse-green-700: #1F6B5C;
+  --dse-slate-600: #5B7C9D;
+
+  /* Semantic (legacy aliases kept for business-scan compatibility) */
+  --brand: var(--dse-teal-900);
+  --brand2: var(--dse-sage-400);
+  --text: var(--dse-teal-900);
+  --muted: var(--dse-teal-500);
+  --bg: var(--dse-mint-50);
+  --surface: var(--dse-white);
+  --border: var(--dse-border-mint);
+  --ok: var(--dse-teal-900);
+  --warn: var(--dse-orange-500);
+  --risk: var(--dse-red-600);
+  --font: Poppins, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* Data visualization */
+  --dse-data-green: #1F8A65;
+  --dse-data-blue: #2E79B5;
+  --dse-data-orange: #F0A040;
+  --dse-data-accent: #3685BF;
+  --dse-data-yellow: #E8B923;
+
+  /* Spacing (8px base) */
+  --dse-space-1: 4px;
+  --dse-space-2: 8px;
+  --dse-space-3: 12px;
+  --dse-space-4: 16px;
+  --dse-space-5: 20px;
+  --dse-space-6: 24px;
+  --dse-space-8: 32px;
+  --dse-space-10: 40px;
+  --dse-space-12: 48px;
+
+  /* Radius */
+  --dse-radius-sm: 8px;
+  --dse-radius-md: 10px;
+  --dse-radius-lg: 12px;
+  --dse-radius-xl: 14px;
+  --dse-radius-2xl: 16px;
+  --dse-radius-pill: 999px;
+
+  /* Typography scale */
+  --dse-text-display: 30px;
+  --dse-text-h1: 24px;
+  --dse-text-h2: 18px;
+  --dse-text-h3: 15px;
+  --dse-text-body: 13.5px;
+  --dse-text-body-document: 16px;
+  --dse-leading-document: 1.5;
+  --dse-text-small: 12.5px;
+  --dse-text-caption: 11px;
+  --dse-text-overline: 9.5px;
+
+  /* Shadows */
+  --dse-shadow-card: 0 12px 40px rgba(0, 44, 47, 0.10);
+  --dse-shadow-button: 0 8px 22px rgba(0, 44, 47, 0.25);
+  --dse-shadow-logo: 0 4px 14px rgba(0, 0, 0, 0.22);
+
+  /* Brand tints — marketing (offering/poster) */
+  --tint-bg: color-mix(in srgb, var(--brand2) 18%, #fff 82%);
+  --tint-card: color-mix(in srgb, var(--brand2) 10%, #fff 90%);
+  --tint-card2: color-mix(in srgb, var(--brand2) 22%, #fff 78%);
+
+  /* Document mode (scan/workshop) — warm Notion-like canvas */
+  --tint-bg-document: var(--dse-warm-50);
+  --tint-card-document: #ffffff;
+  --tint-card-document-muted: color-mix(in srgb, var(--brand2) 6%, #fff 94%);
+}
+
+/* Print fidelity */
+html, body {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
