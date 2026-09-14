@@ -26,14 +26,182 @@
     </section>
 
     <nav class="metric-nav" aria-label="Metrics">
-      <button type="button" data-metric="leadtimes" aria-selected="true">1. Leadtimes</button>
+      <button type="button" data-metric="overview" aria-selected="true">0. Overzicht Lou</button>
+      <button type="button" data-metric="leadtimes">1. Leadtimes</button>
       <button type="button" data-metric="unreachable">2. Niet bereikbaar</button>
       <button type="button" data-metric="tas-wait">3. Wachttijd na Lou</button>
       <button type="button" data-metric="tas-recover">4. TAS na Lou-miss</button>
       <button type="button" data-metric="success">5. Succesratio</button>
     </nav>
 
-    <section class="metric-panel" id="panel-leadtimes">
+    <section class="metric-panel" id="panel-overview">
+      <h2 class="section-title">
+        <img src="./assets/bird.svg" alt="" />
+        Alle Lou-taken tot nu toe
+      </h2>
+      <p class="dse-hint">
+        Elke Ringtime-taak die Salesforce heeft aangemaakt sinds Lou live is (10 augustus 2026).
+        WhatsApp én voice, inclusief taken die nooit bij Ringtime geraakten.
+      </p>
+
+      <div class="kpi-grid">
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Taken aangemaakt</span>
+          <div class="value">634</div>
+          <p class="note">10 augustus tot 14 september 2026</p>
+        </div>
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Echt bij Ringtime</span>
+          <div class="value">540</div>
+          <p class="note">94 taken zonder Ringtime-Id (technisch / duplicaat)</p>
+        </div>
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">WhatsApp</span>
+          <div class="value">414</div>
+          <p class="note">220 voice-taken daarna</p>
+        </div>
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Nog bezig</span>
+          <div class="value">22</div>
+          <p class="note">Active · nog geen eindresultaat</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        <img src="./assets/bird.svg" alt="" />
+        Per week
+      </h2>
+      <p class="dse-hint">Week 38 is deze week, nog niet af.</p>
+      <div class="dse-card dse-card--white" style="padding:16px 18px;">
+        <div class="compare">
+          <div class="compare-row">
+            <div class="compare-label">W33 · 10–16 aug</div>
+            <div class="bar-track">
+              <div class="bar bar--lou" style="width:32%">60</div>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">W34 · 17–23 aug</div>
+            <div class="bar-track">
+              <div class="bar bar--lou" style="width:60%">112</div>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">W35 · 24–30 aug</div>
+            <div class="bar-track">
+              <div class="bar bar--lou" style="width:63%">118</div>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">W36 · 31 aug–6 sep</div>
+            <div class="bar-track">
+              <div class="bar bar--lou" style="width:74%">138</div>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">W37 · 7–13 sep</div>
+            <div class="bar-track">
+              <div class="bar bar--lou" style="width:100%">186</div>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">W38 · 14 sep</div>
+            <div class="bar-track">
+              <div class="bar bar--empty" style="width:18%">20 · deze week</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        <img src="./assets/bird.svg" alt="" />
+        Per dag
+      </h2>
+      <p class="dse-hint">Hoogste dag: 47 taken op 8 september. Weekend is lichterblauw.</p>
+      <div class="dse-card dse-card--white" style="padding:16px 18px 12px;">
+        <div class="day-chart" aria-hidden="true">
+          <span class="day-col" style="height:15%" title="10 aug: 7"></span>
+          <span class="day-col" style="height:15%" title="11 aug: 7"></span>
+          <span class="day-col" style="height:2%" title="12 aug: 1"></span>
+          <span class="day-col" style="height:38%" title="13 aug: 18"></span>
+          <span class="day-col" style="height:28%" title="14 aug: 13"></span>
+          <span class="day-col is-weekend" style="height:15%" title="15 aug: 7"></span>
+          <span class="day-col is-weekend" style="height:15%" title="16 aug: 7"></span>
+          <span class="day-col" style="height:49%" title="17 aug: 23"></span>
+          <span class="day-col" style="height:49%" title="18 aug: 23"></span>
+          <span class="day-col" style="height:40%" title="19 aug: 19"></span>
+          <span class="day-col" style="height:40%" title="20 aug: 19"></span>
+          <span class="day-col" style="height:36%" title="21 aug: 17"></span>
+          <span class="day-col is-weekend" style="height:6%" title="22 aug: 3"></span>
+          <span class="day-col is-weekend" style="height:17%" title="23 aug: 8"></span>
+          <span class="day-col" style="height:53%" title="24 aug: 25"></span>
+          <span class="day-col" style="height:81%" title="25 aug: 38"></span>
+          <span class="day-col" style="height:30%" title="26 aug: 14"></span>
+          <span class="day-col" style="height:26%" title="27 aug: 12"></span>
+          <span class="day-col" style="height:23%" title="28 aug: 11"></span>
+          <span class="day-col is-weekend" style="height:21%" title="29 aug: 10"></span>
+          <span class="day-col is-weekend" style="height:17%" title="30 aug: 8"></span>
+          <span class="day-col" style="height:77%" title="31 aug: 36"></span>
+          <span class="day-col" style="height:36%" title="1 sep: 17"></span>
+          <span class="day-col" style="height:32%" title="2 sep: 15"></span>
+          <span class="day-col" style="height:94%" title="3 sep: 44"></span>
+          <span class="day-col" style="height:36%" title="4 sep: 17"></span>
+          <span class="day-col is-weekend" style="height:11%" title="5 sep: 5"></span>
+          <span class="day-col is-weekend" style="height:9%" title="6 sep: 4"></span>
+          <span class="day-col" style="height:72%" title="7 sep: 34"></span>
+          <span class="day-col" style="height:100%" title="8 sep: 47"></span>
+          <span class="day-col" style="height:57%" title="9 sep: 27"></span>
+          <span class="day-col" style="height:70%" title="10 sep: 33"></span>
+          <span class="day-col" style="height:43%" title="11 sep: 20"></span>
+          <span class="day-col is-weekend" style="height:32%" title="12 sep: 15"></span>
+          <span class="day-col is-weekend" style="height:21%" title="13 sep: 10"></span>
+          <span class="day-col" style="height:43%" title="14 sep: 20"></span>
+        </div>
+        <div class="day-axis">
+          <span>10 aug</span>
+          <span>17 aug</span>
+          <span>24 aug</span>
+          <span>31 aug</span>
+          <span>7 sep</span>
+          <span>14 sep</span>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        <img src="./assets/bird.svg" alt="" />
+        Resultaat van de taken
+      </h2>
+      <p class="dse-hint">
+        <em>screened</em> = er was een gesprek. <em>none</em> = geen gesprek (niet bereikbaar).
+        Failed zonder resultaat is technisch, geen contactpoging.
+      </p>
+      <div class="pie-layout">
+        <div class="dse-card dse-card--white pie-card">
+          <div class="pie" role="img" aria-label="Taartdiagram van Lou-taakresultaten"></div>
+        </div>
+        <div>
+          <ul class="pie-legend">
+            <li><i style="background:#1F8A65"></i>Gesprek (screened) · 386 · 61%</li>
+            <li><i style="background:#F0A040"></i>Geen gesprek (none) · 107 · 17%</li>
+            <li><i style="background:#B42318"></i>Failed, geen resultaat · 68 · 11%</li>
+            <li><i style="background:#89A9A9"></i>Geannuleerd · 23 · 4%</li>
+            <li><i style="background:#2E79B5"></i>Nog bezig (Active) · 22 · 3%</li>
+            <li><i style="background:#E8B923"></i>Duplicate · 16 · 3%</li>
+            <li><i style="background:#4F6B6C"></i>Andere (declined, escalated, callback, stop) · 12 · 2%</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dse-cta">
+        <div>
+          <div class="cta-h">Volgende metric</div>
+          <div class="cta-d">Doorlooptijden met Lou, naast de Q1–Q2-benchmark.</div>
+        </div>
+        <button type="button" class="cta-btn" data-go="leadtimes">Naar metric 1</button>
+      </div>
+    </section>
+
+    <section class="metric-panel" id="panel-leadtimes" hidden>
       <h2 class="section-title">
         <img src="./assets/bird.svg" alt="" />
         Wat we meten
@@ -837,6 +1005,7 @@
   <script>
     const buttons = document.querySelectorAll(".metric-nav button");
     const panels = {
+      overview: document.getElementById("panel-overview"),
       leadtimes: document.getElementById("panel-leadtimes"),
       unreachable: document.getElementById("panel-unreachable"),
       "tas-wait": document.getElementById("panel-tas-wait"),
