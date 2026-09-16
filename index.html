@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Ringtime x Salesforce Logi-Technic reporting</title>
-  <link rel="stylesheet" href="./tokens.css?v=20260916l" />
-  <link rel="stylesheet" href="./components.css?v=20260916l" />
-  <link rel="stylesheet" href="./dashboard.css?v=20260916l" />
+  <link rel="stylesheet" href="./tokens.css?v=20260916m" />
+  <link rel="stylesheet" href="./components.css?v=20260916m" />
+  <link rel="stylesheet" href="./dashboard.css?v=20260916m" />
 </head>
 <body class="dse">
   <main class="dse-page">
@@ -453,6 +453,27 @@
         Lead times zijn de statuswissels op de sollicitatie. Bijna alle fiches hebben die (320/325 en 2.010/2.030).
         Wie nog in Nieuw staat zonder wissel, blijft bovenaan de trechter.
       </p>
+
+      <h2 class="section-title">
+        <img src="./assets/bird.svg" alt="" />
+        Niet te bereiken
+      </h2>
+      <p class="dse-hint">
+        Zelfde signaal, twee registraties. Links: Lou had geen gesprek (resultaat none).
+        Rechts: TAS wees af met reden Unreachable.
+      </p>
+      <div class="duo">
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Met afronding · none</span>
+          <div class="value">31,7%</div>
+          <p class="note">103 van 325 fiches</p>
+        </div>
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Zonder afronding · Unreachable</span>
+          <div class="value">2,9%</div>
+          <p class="note">59 van 2.030 fiches</p>
+        </div>
+      </div>
     </section>
 
     <section class="metric-panel" id="panel-rejections" hidden>
