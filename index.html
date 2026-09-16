@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Ringtime x Salesforce Logi-Technic reporting</title>
-  <link rel="stylesheet" href="./tokens.css?v=20260916" />
-  <link rel="stylesheet" href="./components.css?v=20260916" />
-  <link rel="stylesheet" href="./dashboard.css?v=20260916" />
+  <link rel="stylesheet" href="./tokens.css?v=20260916i" />
+  <link rel="stylesheet" href="./components.css?v=20260916i" />
+  <link rel="stylesheet" href="./dashboard.css?v=20260916i" />
 </head>
 <body class="dse">
   <main class="dse-page">
     <section class="dse-hero">
       <div>
         <h1 class="dse-hero__title"><span class="accent">Ringtime</span> x Salesforce Logi-Technic reporting</h1>
-        <p class="dse-hero__meta">Resultaten Q1 en Q2 2026 referentiedataset t.o.v. Ringtime performance YTD.</p>
+        <p class="dse-hero__meta">Website-poolvacatures 2026: mét versus zonder minstens één afgeronde Ringtime-taak.</p>
       </div>
     </section>
 
@@ -171,18 +171,18 @@
         <img src="./assets/bird.svg" alt="" />
         Gemiddelde doorlooptijd
       </h2>
-      <p class="dse-hint">Q1–Q2 2026 = ijkpunt zonder Lou.</p>
+      <p class="dse-hint">Beide groepen = website-sollicitaties op de poolvacature, aangemaakt in 2026. Failed Ringtime-taken tellen niet: die fiche zit bij “zonder afronding”.</p>
 
       <div class="duo">
         <div class="dse-card dse-card--white kpi-card">
-          <span class="label">Met Lou</span>
-          <div class="value">7,9 dagen</div>
-          <p class="note">0 tot 133 dagen</p>
+          <span class="label">Met afronding</span>
+          <div class="value">8,2 dagen</div>
+          <p class="note">325 fiches · 0 tot 133 dagen</p>
         </div>
         <div class="dse-card dse-card--white kpi-card">
-          <span class="label">Zonder Lou (Q1–Q2)</span>
-          <div class="value">17,8 dagen</div>
-          <p class="note">0 tot 231 dagen</p>
+          <span class="label">Zonder afronding</span>
+          <div class="value">15,6 dagen</div>
+          <p class="note">2.030 fiches · 0 tot 231 dagen</p>
         </div>
       </div>
 
@@ -194,17 +194,17 @@
         <thead>
           <tr>
             <th>Eindstatus</th>
-            <th>Met Lou</th>
-            <th>Zonder Lou</th>
+            <th>Met afronding</th>
+            <th>Zonder afronding</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Afgewezen na Nieuw</td><td>2,5 dagen</td><td>7,2 dagen</td></tr>
-          <tr><td>Afgewezen na Prescreening</td><td>5,5 dagen</td><td>17,1 dagen</td></tr>
-          <tr><td>Afgewezen na Screening TAS</td><td>5,4 dagen</td><td>15,2 dagen</td></tr>
-          <tr><td>Afgewezen na Screening TS</td><td>10,6 dagen</td><td>24,8 dagen</td></tr>
-          <tr><td>Teruggetrokken</td><td>11,5 dagen</td><td>32,8 dagen</td></tr>
-          <tr><td>Aangeworven</td><td>—</td><td>53,2 dagen</td></tr>
+          <tr><td>Afgewezen na Nieuw</td><td>2,5 dagen</td><td>6,4 dagen</td></tr>
+          <tr><td>Afgewezen na Prescreening</td><td>5,5 dagen</td><td>15,0 dagen</td></tr>
+          <tr><td>Afgewezen na Screening TAS</td><td>5,4 dagen</td><td>15,4 dagen</td></tr>
+          <tr><td>Afgewezen na Screening TS</td><td>10,6 dagen</td><td>24,0 dagen</td></tr>
+          <tr><td>Teruggetrokken</td><td>12,9 dagen</td><td>27,8 dagen</td></tr>
+          <tr><td>Aangeworven</td><td>—</td><td>48,9 dagen</td></tr>
         </tbody>
       </table>
     </section>
@@ -216,15 +216,22 @@
       </h2>
       <p class="dse-hint">Geen vergelijking met TAS: voicemails worden daar niet consistent gelogd.</p>
 
-      <div class="dse-card dse-card--white pie-block">
-        <div class="pie-layout pie-layout--compact">
+      <div class="pie-layout">
+        <div class="dse-card dse-card--white pie-card">
           <div class="pie pie--results" role="img" aria-label="Taartdiagram van alle Ringtime-resultaten"></div>
-          <ul class="pie-legend">
-            <li><i style="background:#1F8A65"></i>Gesprek · 411 · 61%</li>
-            <li><i style="background:#F0A040"></i>Geen gesprek · 114 · 17%</li>
-            <li><i style="background:#89A9A9"></i>Overig · 151 · 22%</li>
-          </ul>
         </div>
+        <ul class="pie-legend">
+          <li><i style="background:#1F8A65"></i>Gesprek · 411 · 61%</li>
+          <li><i style="background:#F0A040"></i>Geen gesprek · 114 · 17%</li>
+          <li><i style="background:#B42318"></i>Failed · 70 · 10%</li>
+          <li><i style="background:#2E79B5"></i>Nog bezig · 27 · 4%</li>
+          <li><i style="background:#89A9A9"></i>Geannuleerd · 25 · 4%</li>
+          <li><i style="background:#E8B923"></i>Duplicate · 16 · 2%</li>
+          <li><i style="background:#F04A00"></i>declined · 5 · 1%</li>
+          <li><i style="background:#5B7C9D"></i>escalated · 5 · 1%</li>
+          <li><i style="background:#3685BF"></i>callback · 2 · &lt;1%</li>
+          <li><i style="background:#4F6B6C"></i>opted_out · 1 · &lt;1%</li>
+        </ul>
       </div>
 
       <table class="dse-table">
@@ -323,6 +330,51 @@
           </tr>
         </tbody>
       </table>
+
+      <h2 class="section-title">
+        <img src="./assets/bird.svg" alt="" />
+        None versus Unreachable
+      </h2>
+      <p class="dse-hint">
+        Twee registraties van hetzelfde: de kandidaat was niet bereikbaar.
+        <strong>Lou</strong> = afgeronde Ringtime-taak met resultaat none.
+        <strong>TAS</strong> = afwijsstap met reden Unreachable. Dat is de vergelijkingsgroep, niet de rest van de jaargroep.
+      </p>
+      <div class="duo">
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Via Lou · none</span>
+          <div class="value">105</div>
+          <p class="note">115 afgeronde taken</p>
+        </div>
+        <div class="dse-card dse-card--white kpi-card">
+          <span class="label">Via TAS · Unreachable</span>
+          <div class="value">68</div>
+          <p class="note">website-poolvacatures 2026</p>
+        </div>
+      </div>
+      <table class="dse-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Via Lou (none)</th>
+            <th>Via TAS (Unreachable)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Fiches</td><td>105</td><td>68</td></tr>
+          <tr><td>Ook in de andere groep</td><td>8</td><td>8</td></tr>
+          <tr><td>Nog open</td><td>26</td><td>0</td></tr>
+          <tr><td>Al afgewezen</td><td>68</td><td>68</td></tr>
+          <tr><td>Teruggetrokken</td><td>11</td><td>0</td></tr>
+          <tr><td>Mediaan doorlooptijd</td><td>6 dagen</td><td>8,5 dagen</td></tr>
+          <tr><td>Gemiddelde doorlooptijd</td><td>10,1 dagen</td><td>28,7 dagen</td></tr>
+        </tbody>
+      </table>
+      <p class="dse-hint">
+        Unreachable is altijd een afwijzing (31 na Nieuw, 37 na Prescreening).
+        None is alleen “geen gesprek”: TAS moet daarna nog beslissen, daarom zijn 26 van die fiches nog open.
+        Slechts 8 fiches hebben beide labels. Op Lou-fiches is Unreachable nu 17 keer de laatste afwijsreden (was vaak No-show).
+      </p>
     </section>
 
     <section class="metric-panel" id="panel-tas-wait" hidden>
@@ -414,81 +466,38 @@
     <section class="metric-panel" id="panel-success" hidden>
       <h2 class="section-title">
         <img src="./assets/bird.svg" alt="" />
-        Hire vs eerste fase
+        Funnel tot aanwerving
       </h2>
       <p class="dse-hint">
-        Q1–Q2 is het ijkpunt zonder Lou, geen wedstrijd in dezelfde weken.
-        Ringtime versnelt vooral de bovenkant van de funnel en bespaart de menselijke pre-screeningtijd
-        die voor meer dan 70% resulteert in afwijzingen.
+        Alle website-sollicitaties voor de poolvacature in 2026. Elke trede = de fiche is <strong>ooit</strong> tot die fase gekomen
+        (huidige status of een eerdere wissel in de lead times). Failed Ringtime-taken zonder afronding zitten in de rechterkolom.
       </p>
 
-      <div class="duo">
-        <div class="dse-card dse-card--white kpi-card">
-          <span class="label">Hire met Lou</span>
-          <div class="value">0%</div>
-          <p class="note">0 van 355 · live sinds 10 augustus</p>
+      <div class="funnel-pair">
+        <div class="funnel-col">
+          <h3 class="subhead">Met afgeronde Ringtime-taak</h3>
+          <p class="funnel-meta">325 fiches · 320 met lead times · 79 nog open · 0 aangeworven</p>
+          <div class="funnel-step funnel-step--lou" style="width:100%"><span>Start</span><span>325 · 100%</span></div>
+          <div class="funnel-step funnel-step--lou" style="width:93%"><span>Tot Prescreening</span><span>301 · 93%</span></div>
+          <div class="funnel-step funnel-step--lou" style="width:67%"><span>Tot TAS-screening</span><span>218 · 67%</span></div>
+          <div class="funnel-step funnel-step--lou" style="width:22%"><span>Tot TS-screening</span><span>24 · 7%</span></div>
+          <div class="funnel-step funnel-step--empty" style="width:18%"><span>Aangeworven</span><span>0 · 0%</span></div>
         </div>
-        <div class="dse-card dse-card--white kpi-card">
-          <span class="label">Hire zonder Lou</span>
-          <div class="value">1,1%</div>
-          <p class="note">16 van 1.452 in Q1–Q2</p>
-        </div>
-      </div>
-
-      <div class="dse-card dse-card--white" style="padding:16px 18px;">
-        <p class="legend">
-          <span class="lou"><i></i>Met Lou</span>
-          <span class="tas"><i></i>Zonder Lou (Q1–Q2)</span>
-        </p>
-        <div class="compare">
-          <div class="compare-row">
-            <div class="compare-label">Tot Prescreening</div>
-            <div class="bar-track">
-              <div class="bar bar--lou" style="width:86%">86%</div>
-              <div class="bar bar--tas" style="width:57%">57%</div>
-            </div>
-          </div>
-          <div class="compare-row">
-            <div class="compare-label">Tot TAS-screening</div>
-            <div class="bar-track">
-              <div class="bar bar--lou" style="width:61%">61%</div>
-              <div class="bar bar--tas" style="width:19%">19%</div>
-            </div>
-          </div>
-          <div class="compare-row">
-            <div class="compare-label">Tot TS-screening</div>
-            <div class="bar-track">
-              <div class="bar bar--lou" style="width:7%">7%</div>
-              <div class="bar bar--tas" style="width:10%">10%</div>
-            </div>
-          </div>
-          <div class="compare-row">
-            <div class="compare-label">Aangeworven</div>
-            <div class="bar-track">
-              <div class="bar bar--empty" style="width:8%">0%</div>
-              <div class="bar bar--tas" style="width:8%">1,1%</div>
-            </div>
-          </div>
+        <div class="funnel-col">
+          <h3 class="subhead">Zonder afgeronde Ringtime-taak</h3>
+          <p class="funnel-meta">2.030 fiches · 2.010 met lead times · 98 nog open · 20 aangeworven</p>
+          <div class="funnel-step funnel-step--tas" style="width:100%"><span>Start</span><span>2.030 · 100%</span></div>
+          <div class="funnel-step funnel-step--tas" style="width:50%"><span>Tot Prescreening</span><span>1.022 · 50%</span></div>
+          <div class="funnel-step funnel-step--tas" style="width:28%"><span>Tot TAS-screening</span><span>331 · 16%</span></div>
+          <div class="funnel-step funnel-step--tas" style="width:22%"><span>Tot TS-screening</span><span>174 · 9%</span></div>
+          <div class="funnel-step funnel-step--tas" style="width:18%"><span>Aangeworven</span><span>20 · 1,0%</span></div>
         </div>
       </div>
 
-      <table class="dse-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Met Lou</th>
-            <th>Zonder Lou</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Fiches</td><td>355</td><td>1.452</td></tr>
-          <tr><td>Nog open</td><td>93</td><td>22</td></tr>
-          <tr><td>Aangeworven</td><td>0</td><td>16</td></tr>
-          <tr><td>Hire-ratio</td><td>0%</td><td>1,1%</td></tr>
-          <tr><td>Tot TAS-screening</td><td>61%</td><td>19%</td></tr>
-          <tr><td>Tot TS-screening</td><td>7%</td><td>10%</td></tr>
-        </tbody>
-      </table>
+      <p class="dse-hint">
+        Lead times zijn de statuswissels op de sollicitatie. Bijna alle fiches hebben die (320/325 en 2.010/2.030).
+        Wie nog in Nieuw staat zonder wissel, blijft bovenaan de trechter.
+      </p>
     </section>
 
     <section class="metric-panel" id="panel-rejections" hidden>
@@ -501,18 +510,18 @@
       <div class="kpi-grid">
         <div class="dse-card dse-card--white kpi-card">
           <span class="label">Afgewezen</span>
-          <div class="value">297</div>
-          <p class="note">van 438 fiches met Lou-taak</p>
+          <div class="value">299</div>
+          <p class="note">van 439 fiches met Lou-taak</p>
         </div>
         <div class="dse-card dse-card--white kpi-card">
           <span class="label">Met reden op de stap</span>
           <div class="value">100%</div>
-          <p class="note">alle 297 Afwijzen-stappen</p>
+          <p class="note">alle 299 Afwijzen-stappen</p>
         </div>
         <div class="dse-card dse-card--white kpi-card">
           <span class="label">Technisch onvoldoende</span>
           <div class="value">54%</div>
-          <p class="note">160 fiches</p>
+          <p class="note">162 fiches</p>
         </div>
         <div class="dse-card dse-card--white kpi-card">
           <span class="label">Teruggetrokken</span>
@@ -526,12 +535,13 @@
           <div class="pie pie--reject" role="img" aria-label="Taartdiagram van afwijsredenen"></div>
         </div>
         <ul class="pie-legend">
-          <li><i style="background:#1F8A65"></i>Technisch onvoldoende · 160 · 54%</li>
+          <li><i style="background:#1F8A65"></i>Technisch onvoldoende · 162 · 54%</li>
           <li><i style="background:#E8B923"></i>Duplicaat · 28 · 9%</li>
-          <li><i style="background:#F0A040"></i>No-show · 28 · 9%</li>
           <li><i style="background:#2E79B5"></i>Junior · 25 · 8%</li>
           <li><i style="background:#F04A00"></i>Niet flexibel · 24 · 8%</li>
+          <li><i style="background:#C45C26"></i>Unreachable · 17 · 6%</li>
           <li><i style="background:#89A9A9"></i>Geen projecten · 17 · 6%</li>
+          <li><i style="background:#F0A040"></i>No-show · 11 · 4%</li>
           <li><i style="background:#5B7C9D"></i>Cultural fit · 10 · 3%</li>
           <li><i style="background:#B42318"></i>Attitude / motivatie · 3 · 1%</li>
           <li><i style="background:#4F6B6C"></i>Salaris · 2 · 1%</li>
@@ -550,7 +560,7 @@
         <tbody>
           <tr>
             <td><span class="swatch" style="background:#1F8A65"></span>Technisch onvoldoende</td>
-            <td>160</td>
+            <td>162</td>
             <td>54%</td>
             <td>Kennis of ervaring volstaat niet.</td>
           </tr>
@@ -559,12 +569,6 @@
             <td>28</td>
             <td>9%</td>
             <td>Zelfde kandidaat stond al in het proces.</td>
-          </tr>
-          <tr>
-            <td><span class="swatch" style="background:#F0A040"></span>No-show</td>
-            <td>28</td>
-            <td>9%</td>
-            <td>Kandidaat kwam niet opdagen.</td>
           </tr>
           <tr>
             <td><span class="swatch" style="background:#2E79B5"></span>Junior</td>
@@ -579,10 +583,22 @@
             <td>Beschikbaarheid of inzetbaarheid past niet.</td>
           </tr>
           <tr>
+            <td><span class="swatch" style="background:#C45C26"></span>Unreachable</td>
+            <td>17</td>
+            <td>6%</td>
+            <td>Niet bereikbaar. Geen gesprek of geen reactie.</td>
+          </tr>
+          <tr>
             <td><span class="swatch" style="background:#89A9A9"></span>Geen projecten</td>
             <td>17</td>
             <td>6%</td>
             <td>Geen passende opdracht.</td>
+          </tr>
+          <tr>
+            <td><span class="swatch" style="background:#F0A040"></span>No-show</td>
+            <td>11</td>
+            <td>4%</td>
+            <td>Kandidaat kwam niet opdagen (na TAS-screening).</td>
           </tr>
           <tr>
             <td><span class="swatch" style="background:#5B7C9D"></span>Cultural fit</td>
@@ -625,15 +641,15 @@
         <div class="compare">
           <div class="compare-row">
             <div class="compare-label">Na Screening TAS</div>
-            <div class="bar-track"><div class="bar bar--lou" style="width:100%">142</div></div>
+            <div class="bar-track"><div class="bar bar--lou" style="width:100%">143</div></div>
           </div>
           <div class="compare-row">
             <div class="compare-label">Na Nieuw</div>
-            <div class="bar-track"><div class="bar bar--lou" style="width:60%">85</div></div>
+            <div class="bar-track"><div class="bar bar--lou" style="width:59%">85</div></div>
           </div>
           <div class="compare-row">
             <div class="compare-label">Na Prescreening</div>
-            <div class="bar-track"><div class="bar bar--lou" style="width:42%">60</div></div>
+            <div class="bar-track"><div class="bar bar--lou" style="width:43%">61</div></div>
           </div>
           <div class="compare-row">
             <div class="compare-label">Na Screening TS</div>
@@ -653,12 +669,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Technisch onvoldoende</td><td>30</td><td>37</td><td>89</td><td>4</td></tr>
+          <tr><td>Technisch onvoldoende</td><td>30</td><td>38</td><td>90</td><td>4</td></tr>
           <tr><td>Duplicaat</td><td>27</td><td>1</td><td>0</td><td>0</td></tr>
-          <tr><td>No-show</td><td>9</td><td>8</td><td>11</td><td>0</td></tr>
           <tr><td>Junior</td><td>2</td><td>5</td><td>15</td><td>3</td></tr>
           <tr><td>Niet flexibel</td><td>10</td><td>7</td><td>6</td><td>1</td></tr>
+          <tr><td>Unreachable</td><td>9</td><td>8</td><td>0</td><td>0</td></tr>
           <tr><td>Geen projecten</td><td>3</td><td>2</td><td>11</td><td>1</td></tr>
+          <tr><td>No-show</td><td>0</td><td>0</td><td>11</td><td>0</td></tr>
           <tr><td>Cultural fit</td><td>2</td><td>0</td><td>7</td><td>1</td></tr>
           <tr><td>Attitude / motivatie</td><td>1</td><td>0</td><td>2</td><td>0</td></tr>
           <tr><td>Salaris</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
