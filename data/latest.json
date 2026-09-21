@@ -1,0 +1,403 @@
+{
+  "as_of": "2026-09-21",
+  "overview": {
+    "tasks": 759,
+    "with_rtid": 649,
+    "without_rtid": 110,
+    "wa": 497,
+    "voice": 262,
+    "active": 33,
+    "first": "2026-08-10",
+    "last": "2026-09-21",
+    "weeks": [
+      {
+        "week": 33,
+        "label": "W33 · 10–16 aug",
+        "wa": 44,
+        "voice": 16,
+        "total": 60
+      },
+      {
+        "week": 34,
+        "label": "W34 · 17–23 aug",
+        "wa": 80,
+        "voice": 34,
+        "total": 114
+      },
+      {
+        "week": 35,
+        "label": "W35 · 24–30 aug",
+        "wa": 74,
+        "voice": 42,
+        "total": 116
+      },
+      {
+        "week": 36,
+        "label": "W36 · 31 aug–6 sep",
+        "wa": 101,
+        "voice": 39,
+        "total": 140
+      },
+      {
+        "week": 37,
+        "label": "W37 · 7–13 sep",
+        "wa": 100,
+        "voice": 83,
+        "total": 183
+      },
+      {
+        "week": 38,
+        "label": "W38 · 14–20 sep",
+        "wa": 95,
+        "voice": 45,
+        "total": 140
+      },
+      {
+        "week": 39,
+        "label": "W39 · 21–27 sep",
+        "wa": 3,
+        "voice": 3,
+        "total": 6
+      }
+    ],
+    "wa_pie": {
+      "n": 497,
+      "talk": 282,
+      "none": 71,
+      "rest": 144
+    },
+    "voice_pie": {
+      "n": 262,
+      "talk": 183,
+      "none": 59,
+      "rest": 20
+    },
+    "task_buckets": {
+      "screened": 465,
+      "Cancelled": 26,
+      "none": 130,
+      "opted_out": 1,
+      "Failed": 91,
+      "declined": 5,
+      "callback": 2,
+      "Active": 33,
+      "escalated": 6
+    }
+  },
+  "with": {
+    "n": 367,
+    "avg": 8.7,
+    "min": 0,
+    "max": 138,
+    "open": 108,
+    "hired": 0,
+    "end": {
+      "Afgewezen na Screening TAS": 5.8,
+      "Teruggetrokken": 13.4,
+      "Afgewezen na Screening TS": 10.6,
+      "Afgewezen na Prescreening": 5.4,
+      "Afgewezen na Nieuw": 2.5
+    },
+    "funnel": {
+      "n": 367,
+      "counts": [
+        367,
+        334,
+        239,
+        26,
+        0
+      ],
+      "pct": [
+        100,
+        91,
+        65,
+        7,
+        0
+      ],
+      "hire_pct": 0.0
+    },
+    "with_lead_time": 352,
+    "none": 117,
+    "none_pct": 31.9
+  },
+  "without": {
+    "n": 2048,
+    "avg": 15.7,
+    "min": 0,
+    "max": 231,
+    "open": 104,
+    "hired": 21,
+    "end": {
+      "Afgewezen na Prescreening": 15.7,
+      "Teruggetrokken": 27.9,
+      "Afgewezen na Nieuw": 6.4,
+      "Afgewezen na Screening TAS": 15.4,
+      "Afgewezen na Screening TS": 24,
+      "Aangeworven": 48.9
+    },
+    "funnel": {
+      "n": 2048,
+      "counts": [
+        2048,
+        1027,
+        331,
+        174,
+        21
+      ],
+      "pct": [
+        100,
+        50,
+        16,
+        8,
+        1
+      ],
+      "hire_pct": 1.0
+    },
+    "with_lead_time": 2011,
+    "unreachable": 60,
+    "unreachable_pct": 2.9
+  },
+  "tas_wait": {
+    "ready": 366,
+    "with_step": 221,
+    "no_step": 145,
+    "median_days": 1.9,
+    "avg_days": 3.7,
+    "max_days": 29.0,
+    "within_4h": 28,
+    "within_24h": 45,
+    "hours_buckets": {
+      "4-24u": 38,
+      ">7d": 37,
+      "3-7d": 44,
+      "<4u": 61,
+      "1-3d": 41
+    },
+    "first_events": [
+      [
+        "Afwijzen",
+        152
+      ],
+      [
+        "Intake TAS",
+        32
+      ],
+      [
+        "Kandidaat trekt zich terug",
+        15
+      ],
+      [
+        "Assign / Prescreening / Screening TAS",
+        13
+      ],
+      [
+        "Screening TS of talentpool",
+        7
+      ],
+      [
+        "Geen eventnaam",
+        2
+      ]
+    ],
+    "reject_first": 152
+  },
+  "rejections": {
+    "lou_jas": 494,
+    "rejected": 311,
+    "withdrawn": 36,
+    "reasons": [
+      [
+        "Technically insufficient",
+        166
+      ],
+      [
+        "Duplicate",
+        28
+      ],
+      [
+        "Junior",
+        26
+      ],
+      [
+        "Not flexible",
+        25
+      ],
+      [
+        "Unreachable",
+        19
+      ],
+      [
+        "Currently no projects",
+        19
+      ],
+      [
+        "Cultural fit",
+        11
+      ],
+      [
+        "No show",
+        11
+      ],
+      [
+        "Attitude insufficient / motivation",
+        3
+      ],
+      [
+        "Salary",
+        3
+      ]
+    ],
+    "grid": [
+      [
+        "Technically insufficient",
+        "Na Prescreening",
+        40
+      ],
+      [
+        "Junior",
+        "Na Prescreening",
+        5
+      ],
+      [
+        "Not flexible",
+        "Na Nieuw",
+        10
+      ],
+      [
+        "Cultural fit",
+        "Na Screening TAS",
+        7
+      ],
+      [
+        "Technically insufficient",
+        "Na Screening TS",
+        4
+      ],
+      [
+        "Technically insufficient",
+        "Na Screening TAS",
+        92
+      ],
+      [
+        "Unreachable",
+        "Na Prescreening",
+        8
+      ],
+      [
+        "Attitude insufficient / motivation",
+        "Na Screening TAS",
+        2
+      ],
+      [
+        "Junior",
+        "Na Screening TAS",
+        16
+      ],
+      [
+        "Duplicate",
+        "Na Nieuw",
+        27
+      ],
+      [
+        "Not flexible",
+        "Na Prescreening",
+        7
+      ],
+      [
+        "Currently no projects",
+        "Na Screening TAS",
+        13
+      ],
+      [
+        "Technically insufficient",
+        "Na Nieuw",
+        30
+      ],
+      [
+        "Currently no projects",
+        "Na Screening TS",
+        1
+      ],
+      [
+        "No show",
+        "Na Screening TAS",
+        11
+      ],
+      [
+        "Junior",
+        "Na Screening TS",
+        3
+      ],
+      [
+        "Junior",
+        "Na Nieuw",
+        2
+      ],
+      [
+        "Not flexible",
+        "Na Screening TAS",
+        7
+      ],
+      [
+        "Unreachable",
+        "Na Nieuw",
+        9
+      ],
+      [
+        "Unreachable",
+        "Na Screening TAS",
+        2
+      ],
+      [
+        "Currently no projects",
+        "Na Nieuw",
+        3
+      ],
+      [
+        "Not flexible",
+        "Na Screening TS",
+        1
+      ],
+      [
+        "Currently no projects",
+        "Na Prescreening",
+        2
+      ],
+      [
+        "Attitude insufficient / motivation",
+        "Na Nieuw",
+        1
+      ],
+      [
+        "Cultural fit",
+        "Na Nieuw",
+        2
+      ],
+      [
+        "Cultural fit",
+        "Na Screening TS",
+        1
+      ],
+      [
+        "Salary",
+        "Na Screening TAS",
+        2
+      ],
+      [
+        "Duplicate",
+        "Na Prescreening",
+        1
+      ],
+      [
+        "Salary",
+        "Na Nieuw",
+        1
+      ],
+      [
+        "Cultural fit",
+        "Na Prescreening",
+        1
+      ]
+    ]
+  }
+}
